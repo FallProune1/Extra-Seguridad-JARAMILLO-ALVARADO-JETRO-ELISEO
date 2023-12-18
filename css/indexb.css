@@ -82,6 +82,7 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 .formulario div{
@@ -124,7 +125,7 @@ input[type="file"]{
 
 .msj textarea{
     height: 200px;
-    width: 400px;
+    width: 100%;
     padding: 10px;
     outline: solid #ffffff;
     background-color: #202020;
@@ -132,11 +133,12 @@ input[type="file"]{
     border: none;
     border-radius: 2px;
     font-size: 20px;
+
 }
 
 .clave input{
     height: 20px;
-    width: 400px;
+    width: 100%;
     padding: 10px;
     outline: solid #ffffff;
     background-color: #202020;
@@ -154,4 +156,19 @@ input[type="file"]{
 .Imagenes img{
     height: 400px;
     width: 400px;
+}
+
+@media (max-width: 1100px) {
+    .Imagenes img{
+        display: none;
+    }
+    .Title h1{
+        font-size: 25px;
+    }
+    .Lool h2{
+        font-size: 20px;
+    }
+    .Lool h3{
+        font-size: 20px;
+    }
 }
