@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Jetro</title>
+    <link rel="stylesheet" href="./css/indexb.css">
+    <style>
+        .snowflake {
+            position: fixed;
+            top: 0;
+            color: #ffffff;
+            font-size: 1em;
+            z-index: 2000;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerText = '*';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 2 + 3 + 's';
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 100);
+    </script>
+    <header class="Encabezado">
+        <div class="Creditos">
+            <p>
+                Por: Jaramillo Alvarado Jetro ELiseo
+            </p>
+            <a class="Gitxd" href="https://github.com/FallProune1" target="_blank">
+                    <p>
+                        GitHub
+                    </p>
+                    <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+        <div class="Title">
+            <P>*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-</P>
+            <h1>EXTRA DE SEGURIDAD</h1>
+            <P>*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-</P>
+            <div class="Lool">
+                <a href="./index.html" style="text-decoration: none; cursor:pointer;"> <h2>Ocultar Texto</h2></a>
+                <a href="./indexb.html" style="text-decoration: none; cursor:pointer;"><h3>Mostrar Texto</h3></a>
+                
+            </div>
+            
+        </div>
+    </header>
+    <div class="Jajajamm">
+        <div class="formulario">
+            <div class="archivo">
+              <input type="file">
+            </div>  
+            <div class="clave">
+              <input type="password" placeholder="Clave">
+            </div>
+            <div class="show">
+              <button>Mostrar mensaje</button>
+            </div>
+            <div class="msj">
+              <textarea type="text" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+    </div>
+    <div class="Imagenes">
+        <img src="./images/IMG_9935.png" alt="Frosty">
+    </div>
+    <script src="./indexb.js">     
+    </script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

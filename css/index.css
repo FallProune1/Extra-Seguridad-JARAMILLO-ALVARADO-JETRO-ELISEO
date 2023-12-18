@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+body{
+    background-color: #eeeeee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column ;
+    
+}
+.Encabezado{
+    width: 100%;
+}
+.Title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title{
+    color: #202020;
+}
+.Title h1{
+    font-size: 40px;
+    font-weight:bold;
+}
+.Lool{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Lool h2{
+    margin: 20px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #202020;
+}
+.Lool h3{
+    margin: 20px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #5F5F5F;
+}
+.Lool h3:hover{
+    color: #202020;
+}
+.Creditos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Creditos p{
+    color: #5F5F5F;
+    
+
+}
+
+.Gitxd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#5F5F5F ;
+}
+
+.Gitxd:hover{
+    color: #202020;
+}
+
+.Gitxd:hover p{
+    color: #202020;
+}
+.Jajajamm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div{
+    margin-top: 10px;
+}
+
+.archivo button{
+    height: 30px;
+    width: 200px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    margin: 2px;
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;    
+    color: #202020;
+    border-radius: 2px;
+    outline: solid black;
+    height: 30px;
+    width: 170px;
+    background-color: #EEEEEE;
+    font-size: 15px;
+}
+
+.show button{
+    margin: 2px;
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;    
+    color: #202020;
+    border-radius: 2px;
+    outline: solid #202020;
+    height: 30px;
+    width: 170px;
+    background-color: #EEEEEE;
+    font-size: 15px;
+}
+
+.msj textarea{
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    outline: solid #202020;outline: solid #202020;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.clave input{
+    height: 20px;
+    width: 400px;
+    padding: 10px;
+    outline: solid #202020;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.Imagenes{
+    z-index: 1999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.Imagenes img{
+    height: 400px;
+    width: 400px;
+}
